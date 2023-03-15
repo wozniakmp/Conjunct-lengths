@@ -2,9 +2,11 @@
 def complexity(tree):
     return (len(list(tree.subtrees())) + len(tree.leaves()) - 1) / (len(tree.leaves()))
 
+#function returning the parent of a node
 def get_parent(tree, t):
     return t[tree.treeposition()[:-1]]
 
+#function applying colors to coordination and its governor to put it in a LaTeX file
 def set_leaves(tree, color):
     
     leaves = tree.treepositions('leaves')
