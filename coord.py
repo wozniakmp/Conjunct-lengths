@@ -24,6 +24,7 @@ def set_leaves(tree, color):
             break
 
 #function finding the governor of a coordination
+#'tree' is a subtree containing coordination, 't' is a whole tree containing 'tree'
 def get_head(tree, t, coord_pos):
 
     head_dict = {'V': [['VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ'], ['MD'], ['TO']],
